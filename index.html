@@ -49,7 +49,7 @@
 <div class="hint"></div>
 </div>
   <script>
-    const API_URL = 'http://localhost:5678/webhook/chat-econometria';
+    const API_URL = ' https://be51-177-145-81-171.ngrok-free.app/webhook/chat-econometria';
 
 let sessionId = localStorage.getItem('sessionId') || genUUID();
 const chatEl   = document.getElementById('chat');
@@ -120,7 +120,7 @@ formEl.addEventListener('submit', async (e) => {
   }
 });
 
-// 🔹 Corrige o comportamento do Enter
+// Corrige o comportamento do Enter
 inputEl.addEventListener('keydown', (e) => {
   // Enter envia; Shift+Enter faz nova linha
   if (e.key === 'Enter' && !e.shiftKey) {
